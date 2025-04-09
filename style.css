@@ -1,0 +1,76 @@
+/* Style global */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+  }
+  
+  /* En-tête */
+  header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #00ffd5;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 3rem;
+    color: #00ffd5;
+  }
+  header nav {
+    margin-top: 10px;
+  }
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  header nav a:hover {
+    background-color: #00ffd5;
+    color: #111;
+  }
+  
+  /* Sections */
+  section {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1000px;
+  }
+  
+  /* Actualités */
+  #news-container, #streams-container, #scores-container, #tournaments-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  .news-item, .stream-item, .score-item, .tournament-item {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  .news-item h3, .stream-item h3, .score-item h3, .tournament-item h3 {
+    margin-top: 0;
+    color: #00ffd5;
+  }
+  .news-item p, .stream-item p, .score-item p, .tournament-item p {
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #888;
+  }
+  
